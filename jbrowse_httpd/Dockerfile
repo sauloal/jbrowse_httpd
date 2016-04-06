@@ -3,7 +3,7 @@
 FROM httpd
 ENV DEBIAN_FRONTEND noninteractive
 
-ARG JBROWSE_VER
+ARG JBROWSE_VER 1.12.1-release
 
 RUN apt-get -qq update --fix-missing
 RUN apt-get --no-install-recommends -y install git build-essential zlib1g-dev libxml2-dev libexpat-dev postgresql-client libpq-dev ca-certificates nano less
